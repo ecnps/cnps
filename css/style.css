@@ -274,7 +274,7 @@ h6,
 
 @media (max-width: 991.98px) {
     .hero-header {
-        padding: 6rem 0 9rem 0;
+        padding: 5rem 0 4rem 0;
     }
 }
 
@@ -540,7 +540,7 @@ html, body {
     }
 }
 
-/* === MOBILE 320px - 430px === */
+/* === MOBILE 320px - 430px (inclut Tecno Spark 10C ~360px CSS) === */
 @media (max-width: 430px) {
 
     /* Navbar */
@@ -549,55 +549,74 @@ html, body {
         padding-right: 1rem !important;
     }
     .navbar-brand img {
-        max-width: 130px;
+        max-width: 120px;
         height: auto;
     }
 
     /* Hero */
     .hero-header {
-        padding: 3.5rem 0 2.5rem 0 !important;
+        padding: 4rem 0 3rem 0 !important;
         text-align: center;
     }
     .hero-header h1 {
-        font-size: 1.15rem !important;
-        line-height: 1.5;
+        font-size: 1.05rem !important;
+        line-height: 1.6;
         word-break: break-word;
+        hyphens: auto;
+        padding: 0 0.5rem;
     }
     .hero-header p {
         font-size: 0.9rem;
+        padding: 0 0.5rem;
     }
     .phone-frame-mockup {
         display: none !important;
     }
 
     /* Formulaire */
+    #authForm {
+        padding: 0 0.25rem;
+    }
+    #authForm .form-floating {
+        width: 100%;
+    }
     #authForm .form-floating input {
-        font-size: 0.88rem;
+        font-size: 0.95rem;
+        height: 3.2rem;
     }
     #authForm .form-floating label {
-        font-size: 0.78rem;
+        font-size: 0.82rem;
+        padding-top: 0.85rem;
+    }
+    #authForm .col-12.col-md-6 {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
     }
     #btnValider {
         width: 100% !important;
-        padding: 0.85rem 1rem !important;
+        padding: 0.9rem 1rem !important;
         font-size: 1rem;
+        border-radius: 50px !important;
     }
 
     /* PDF actions */
     .pdf-actions {
         flex-direction: column;
         align-items: stretch;
+        gap: 8px;
     }
     .pdf-actions .btn {
         width: 100%;
         text-align: center;
-        font-size: 0.85rem;
+        font-size: 0.88rem;
+        padding: 0.6rem 1rem;
     }
 
     /* PDF iframe */
     .pdf-viewer-iframe {
-        height: 60vh !important;
-        min-height: 300px;
+        height: 65vh !important;
+        min-height: 320px;
     }
 
     /* Footer */
@@ -606,12 +625,17 @@ html, body {
         padding-top: 3rem;
         text-align: center;
     }
-    .footer p,
+    .footer p {
+        font-size: 0.88rem;
+        text-align: center;
+        word-break: break-word;
+    }
     .footer h4 {
         text-align: center;
+        font-size: 1rem;
     }
     .footer .copyright {
-        font-size: 12px;
+        font-size: 0.78rem;
         text-align: center;
     }
 
@@ -624,15 +648,13 @@ html, body {
     }
 
     /* Sections padding */
-    .container-xxl.py-4,
-    .container-xxl.py-5 {
-        padding-top: 2rem !important;
-        padding-bottom: 2rem !important;
+    .container-xxl {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
     }
-    .container.py-3,
-    .container.py-5 {
-        padding-top: 1.5rem !important;
-        padding-bottom: 1.5rem !important;
+    .container {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
     }
 }
 
@@ -643,8 +665,9 @@ html, body {
         text-align: center;
     }
     .hero-header h1 {
-        font-size: 1.3rem !important;
-        line-height: 1.45;
+        font-size: 1.25rem !important;
+        line-height: 1.5;
+        word-break: break-word;
     }
     .phone-frame-mockup {
         display: none !important;
