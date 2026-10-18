@@ -31,78 +31,15 @@
     <link href="css/style.css" rel="stylesheet">
 
     <style>
-        /* === MOBILE RESPONSIVE === */
-
-        /* Ensure disabled inputs maintain high legibility */
         .form-control:disabled, .form-control[readonly] {
             background-color: #f8f9fa;
             color: #212529;
             opacity: 1;
             font-weight: 500;
         }
-
-        /* Logo max-width sur mobile */
         .navbar-brand img {
             max-width: 160px;
             height: auto;
-        }
-
-        /* Hero responsive */
-        @media (max-width: 767.98px) {
-            .hero-header {
-                padding: 4rem 0 3rem 0 !important;
-                text-align: center;
-            }
-            .hero-header h1 {
-                font-size: 1.4rem !important;
-                line-height: 1.4;
-            }
-            .phone-frame-mockup {
-                display: none;
-            }
-        }
-
-        /* Formulaire : champs full-width sur mobile */
-        @media (max-width: 575.98px) {
-            .screenshot-carousel {
-                margin-right: 0;
-            }
-            #authForm .col-md-6 {
-                width: 100%;
-            }
-            #authForm .form-floating input {
-                font-size: 0.9rem;
-            }
-            #authForm .form-floating label {
-                font-size: 0.8rem;
-            }
-            #btnValider {
-                width: 100%;
-                padding: 0.85rem 1rem !important;
-            }
-            .back-to-top {
-                right: 20px;
-                bottom: 20px;
-            }
-            .footer {
-                margin-top: 2rem;
-                padding-top: 3rem;
-            }
-            .footer .col-md-6.col-lg-3 {
-                text-align: center;
-            }
-        }
-
-        /* Tablette : légère adaptation */
-        @media (min-width: 576px) and (max-width: 991.98px) {
-            .hero-header h1 {
-                font-size: 1.6rem;
-            }
-            .phone-frame-mockup {
-                width: 180px;
-                height: 356px;
-                background-size: 180px 356px;
-            }
         }
     </style>
 </head>
